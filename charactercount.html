@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<textarea id="myTextarea" onkeyup="countchar()"></textarea>
+
+<p id="count">
+
+</p>
+<script>
+    function countchar()
+    {
+        let text=document.getElementById("myTextarea").value;
+        let count=text.length;
+        document.getElementById("count").innerHTML="Character count: "+count;
+    }
+</script>
+
+</body>
+</html>
